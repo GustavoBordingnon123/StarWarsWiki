@@ -8,6 +8,8 @@
   --yellow: #FFF500;
   --black: #050816;
   --white: #FFFFFF;
+  --red: #FF0000;
+  --blue: #0000FF;
 }
 
 body{
@@ -57,6 +59,14 @@ body{
   column-gap: 20px;
   row-gap: 50px;
   padding: 0 130px;
+}
+
+.error__text{
+  width: 100%;
+  text-align: center;
+  color: var(--yellow);
+  font-size: 32px;
+  margin: 10px 0;
 }
 
 

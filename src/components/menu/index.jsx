@@ -1,24 +1,30 @@
 import React, { useState } from 'react';
 import './style.css';
 
-const Menu = () => {
-
-    const items__pt = ['Personagens', 'Filmes', 'Naves', 'Veiculos', 'Planetas','Especies'];
-    const [activeItem, setActiveItem] = useState(items__pt[0]);
+const Menu = ({ onClick }) => {
+    const menuItems = [
+        { name: 'Personagens', route: 'people' },
+        { name: 'Naves', route: 'starships' },
+        { name: 'Veiculos', route: 'vehicles' },
+        { name: 'Planetas', route: 'planets' },
+        { name: 'Especies', route: 'species' },
+    ];
+    const [activeItem, setActiveItem] = useState(menuItems[0].name);
 
     const handleClick = (item) => {
-        setActiveItem(item);
+        setActiveItem(item.name);
+        onClick(item.route);
     };
 
     return (
         <nav>
             <ul className='menu'>
-                {items__pt.map((item, index) => (
-                    <React.Fragment key={item}>
-                        <li className={item === activeItem ? 'active' : ''}>
-                            <p onClick={() => handleClick(item)}>{item}</p>
+                {menuItems.map((item, index) => (
+                    <React.Fragment key={item.name}>
+                        <li className={item.name === activeItem ? 'active' : ''}>
+                            <p onClick={() => handleClick(item)}>{item.name}</p>
                         </li>
-                        {index < items__pt.length - 1 && <div className='col' />}
+                        {index < menuItems.length - 1 && <div className='col' />}
                     </React.Fragment>
                 ))}
             </ul>

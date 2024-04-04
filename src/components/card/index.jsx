@@ -10,8 +10,10 @@ const Card = ({data, onClick}) => {
 
     return (
         <div className='card' onClick={onClick}>
-            <img src={imgUrl} alt={data.name} />
-            <p>{data.name}</p>
+            <div className='card__content'>
+                <img src={imgUrl} alt={data.name} />
+                <p>{data.name}</p>
+            </div>
         </div>
     );
 };

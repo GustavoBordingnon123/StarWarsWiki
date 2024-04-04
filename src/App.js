@@ -11,32 +11,38 @@ import BrasilFlag from './assets/icons/brasil.png';
 import UnitedEstatesFlag from './assets/icons/united-states.png';
 
 function App() {
-  const [people, setPeople] = useState([]);
+  const [entities, setEntities] = useState('people'); 
+  const [entityData, setEntityData] = useState([]);
   const [page, setPage] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
 
+
   useEffect(() => {
-    fetch(`https://swapi.dev/api/people/?page=${page}`)
+    fetch(`https://swapi.dev/api/${entities}/?page=${page}`) 
       .then(response => response.json())
-      .then(data => setPeople(data.results))
+      .then(data => setEntityData(data.results))
       .catch(error => console.error('Error fetching data:', error));
-  }, [page]);
+  }, [entities, page]); 
 
   const handlePageClick = (pageNumber) => {
     setPage(pageNumber);
   };
 
-  const handleCardClick = async (personId) => {
+  const handleCardClick = async (entityId) => {
     try {
-      const response = await fetch(`https://swapi.dev/api/people/${personId}`);
+      const response = await fetch(`https://swapi.dev/api/${entities}/${entityId}`);
       const data = await response.json();
       setModalData(data);
       setIsModalOpen(true);
-      console.log(data)
     } catch (error) {
       console.error('Error fetching data:', error);
     }
+  };
+
+  const handleMenuClick = (entity) => {
+    setEntities(entity); 
+    setPage(1); 
   };
 
   return (
@@ -54,13 +60,29 @@ function App() {
         </div>
 
         <div className="menu__container">
-          <Menu />
+          <Menu onClick={handleMenuClick} />
         </div>
 
         <div className="card__container">
-          {people.map((person, index) => (
-            <Card key={person.name} data={person} onClick={() => handleCardClick(index + 1)} />
-          ))}
+          
+          {entityData ? (
+            entityData.map((entity, index) => (
+              <Card
+                key={index + 1}
+                data={entity}
+                onClick={() =>
+                  handleCardClick(
+                    page === 1 ? index + 1 : index + 2 + 10 * (page - 1)
+                  )
+                }
+              />
+            ))
+          ) : (
+            <div className='error__text'>
+              <p>Não foi possível encontrar os dados.</p>
+            </div>
+          )}
+
         </div>
 
         <div className='pagination__container'>

@@ -19,6 +19,16 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 99;
+}
+
 .card img {
     width: 150px;
     height: 150px;
@@ -29,7 +39,39 @@
     color: var(--yellow);
     font-size: 20px;
     font-weight: 700;
+    text-align: center;
 }
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, var(--red), var(--blue));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+  
+@keyframes rotBGimg {
+from {
+    transform: rotate(0deg);
+}
+
+to {
+    transform: rotate(360deg);
+}
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+}  
+  
+  
 
 @keyframes float {
     0% {
