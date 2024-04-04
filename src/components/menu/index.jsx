@@ -12,7 +12,7 @@ const Menu = () => {
 
     return (
         <nav>
-            <ul>
+            <ul className='menu'>
                 {items__pt.map((item, index) => (
                     <React.Fragment key={item}>
                         <li className={item === activeItem ? 'active' : ''}>

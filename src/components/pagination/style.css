@@ -1,0 +1,31 @@
+ul.Pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    width: 100%;
+    gap: 10px;
+}
+
+ul.Pagination li{
+    list-style: none;
+}
+
+
+ul.Pagination li button{
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+}
+
+ul.Pagination li.active button{
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+ul.Pagination li button:hover{
+    cursor: pointer;
+    background-color: var(--yellow);
+    color: var(--white);
+    font-weight: bolder;
+}

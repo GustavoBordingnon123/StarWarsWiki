@@ -1,0 +1,78 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semi-transparente */
+    z-index: 99999;
+}
+
+.modal__content {
+    width: 80%;
+    height: 80%;
+    background-color: var(--black);
+    border: 2px solid var(--yellow);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+}
+
+.modal__close-button{
+    position: absolute;
+    left: 95%;
+    top: 10px;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--yellow);
+    color:var(--white);
+    font-weight: bolder;
+}
+
+.modal__close-button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal__name-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.modal__name-container .divisor{
+    height: 2px;
+    width: 80%;
+    background-color: var(--yellow);
+}
+
+.modal__info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal__content p {
+    color: var(--yellow);
+}
