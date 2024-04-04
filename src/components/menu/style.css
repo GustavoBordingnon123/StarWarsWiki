@@ -1,0 +1,27 @@
+ul{
+    display: flex;
+    gap: 10px;
+}
+
+ul li{
+    list-style: none;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ul li.active{
+    color: var(--yellow);
+}
+
+ul li:hover{
+    color: var(--yellow);
+}
+
+.col{
+    width: 1px;
+    height:30px;
+    background-color: var(--yellow);
+}
+

@@ -1,0 +1,44 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: none;
+    height: 300px;
+    width: 250px;
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    animation: float 3s infinite alternate; 
+}
+
+.card p{
+    color: var(--yellow);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
