@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+## Esse projeto tem duas traduções / This project have 2 languages
+ 
+- [![Português](https://img.shields.io/badge/pt--br-Portugu%C3%AAs-green)](README.pt-br.md) | Português 
+- [![English](https://img.shields.io/badge/en-English-green)](README.md) | English
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Star wars wiki
 
-## Available Scripts
+{#ingles}
 
-In the project directory, you can run:
+A project where you can explore everything about your favorite Star Wars characters, starships, vehicles, planets, and species, with pagination.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Picture
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Desktop
 
-### `npm run eject`
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/679daee1-91d0-4cc2-b360-cd671c3186a1)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Mobile
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/95cb9991-e77d-4742-bf8a-c6402d7f039c)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demonstration
 
-### Code Splitting
+Link to view the website: https://star-wars-wiki-black.vercel.app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Instalation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Dowload the project in your machine
 
-### Advanced Configuration
+```bash
+  npm clone https://github.com/GustavoBordingnon123/StarWarsWiki
+  our 
+  dowload zip
+```
+    
+```bash
+  cd StarWarsWiki
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+  npm install
+```
 
-### Deployment
+```bash
+  npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+  Open your browser and go to: http://localhost:3000
+```
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Star wars wiki
+
+Um projeto onde você pode explorar tudo sobre seus personagens, naves espaciais, veículos, planetas e espécies favoritas de Star Wars, com paginação.
+
+## Imagem
+
+Desktop
+
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/4bb8804b-e12c-46b0-a7a7-97c21181f646)
+
+
+Mobile
+
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/0f98d206-5f1c-4dd2-842c-876f1b311336)
+
+
+## Demonstração
+
+Link para visualizar o site: https://star-wars-wiki-black.vercel.app
+
+## Instalação
+
+Baixe o projeto em sua máquina
+
+
+```bash
+  npm clone https://github.com/GustavoBordingnon123/StarWarsWiki
+  ou 
+  dowload zip
+```
+    
+```bash
+  cd StarWarsWiki
+```
+
+```bash
+  npm install
+```
+
+```bash
+  npm start
+```
+
+```bash
+  Abra seu navegador e vá para: http://localhost:3000
+```
+
+
