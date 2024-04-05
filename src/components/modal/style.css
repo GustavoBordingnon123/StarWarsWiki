@@ -102,25 +102,22 @@
 
 @media screen and (max-height : 800px){
     .modal__info-container{
-        max-height: 400px;
-    }
-}
-
-@media screen and (max-height : 680px){
-    .modal__info-container{
         max-height: 60%;
     }
 }
 
 @media screen and (max-height : 450px){
     .modal__info-container{
-        max-height: 40%;
+        max-height: 35%;
     }
 }
 
-@media screen and (max-width: 768px){
-    
+@media screen and (max-height : 680px){
+    .modal__info-container{
+        max-height: 50%;
+    }
 }
+
 
 
 @media screen and (max-width: 768px){
@@ -130,10 +127,6 @@
         max-width: 200px;
         text-align: center;
         margin: 10px 0px;
-    }
-
-    .modal__info-container {
-        max-height: 200px;
     }
 
     .modal__close-button {
