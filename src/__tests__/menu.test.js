@@ -9,9 +9,9 @@ describe('Menu', () => {
     
     expect(screen.getByText('Personagens')).toBeInTheDocument();
     expect(screen.getByText('Naves')).toBeInTheDocument();
-    expect(screen.getByText('Veiculos')).toBeInTheDocument();
+    expect(screen.getByText('Veículos', { selector: 'p' })).toBeInTheDocument();
     expect(screen.getByText('Planetas')).toBeInTheDocument();
-    expect(screen.getByText('Especies')).toBeInTheDocument();
+    expect(screen.getByText('Espécies')).toBeInTheDocument();
   });
 
   it('calls onClick handler when menu item is clicked', () => {
