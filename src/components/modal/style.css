@@ -108,13 +108,13 @@
 
 @media screen and (max-height : 680px){
     .modal__info-container{
-        max-height: 40%;
+        max-height: 60%;
     }
 }
 
 @media screen and (max-height : 450px){
     .modal__info-container{
-        max-height: 30%;
+        max-height: 40%;
     }
 }
 

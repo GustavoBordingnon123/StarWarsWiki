@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import './App.css';
@@ -10,30 +9,29 @@ import Modal from './components/modal';
 
 import Logo from './assets/images/logo.png';
 import BrasilFlag from './assets/icons/brasil.png';
-import UnitedEstatesFlag from './assets/icons/united-states.png';
-
+import UnitedStatesFlag from './assets/icons/united-states.png';
 
 function App() {
-  const [entities, setEntities] = useState('people'); 
+  const [entities, setEntities] = useState('people');
   const [entityData, setEntityData] = useState([]);
   const [page, setPage] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
   const [activeRoute, setActiveRoute] = useState('people');
+  const [language, setLanguage] = useState('en');
 
-  useEffect(() => { 
-    
+  useEffect(() => {
     const loader = setTimeout(() => {
       toast.dismiss();
     }, 2000);
 
-    toast('Carregando dados...');
+    toast(language === 'en' ? 'Loading data...' : 'Carregando dados...');
 
-    fetch(`https://swapi.dev/api/${entities}/?page=${page}`) 
+    fetch(`https://swapi.dev/api/${entities}/?page=${page}`)
       .then(response => response.json())
-      .then(data => setEntityData(data.results)) 
+      .then(data => setEntityData(data.results))
       .catch(error => console.error('Error fetching data:', error))
-  }, [entities, page]); 
+  }, [entities, page, language]);
 
   const handlePageClick = (pageNumber) => {
     setPage(pageNumber);
@@ -49,14 +47,17 @@ function App() {
   };
 
   const handleMenuClick = (entity) => {
-    setEntities(entity); 
-    setPage(1); 
+    setEntities(entity);
+    setPage(1);
     setActiveRoute(entity);
+  };
+
+  const handleLanguageClick = (lang) => {
+    setLanguage(lang);
   };
 
   return (
     <body>
-
       <Toaster
         position="top-center"
         reverseOrder={false}
@@ -80,17 +81,26 @@ function App() {
         <div className="image__container">
           <img className="title" src={Logo} alt='logo' />
           <div className="language__container">
-            <img className="title" src={BrasilFlag} alt='logo' />
-            <img className="title" src={UnitedEstatesFlag} alt='logo' />
+            <img
+              className="title"
+              src={BrasilFlag}
+              alt='logo'
+              onClick={() => handleLanguageClick('pt')}
+            />
+            <img
+              className="title"
+              src={UnitedStatesFlag}
+              alt='logo'
+              onClick={() => handleLanguageClick('en')}
+            />
           </div>
         </div>
 
         <div className="menu__container">
-          <Menu onClick={handleMenuClick} />
+          <Menu onClick={handleMenuClick} language={language} />
         </div>
 
         <div className="card__container">
-          
           {entityData ? (
             entityData.map((entity, index) => (
               <Card
@@ -98,14 +108,14 @@ function App() {
                 data={entity}
                 onClick={() => handleCardClick(entity)}
                 activeRoute={activeRoute}
+                language={language}
               />
             ))
           ) : (
             <div className='error__text'>
-              <p>Ops, não existem mais dados para essa página....</p>
+              <p>{language === 'en' ? 'Oops, there are no more data for this page....' : 'Ops, não existem mais dados para essa página....'}</p>
             </div>
           )}
-
         </div>
 
         <div className='pagination__container'>
