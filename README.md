@@ -1,7 +1,3 @@
-## Menu
-
-- [Inglês](#)
-- [Português](#portugues)
 # Star wars wiki
 
 {#ingles}
