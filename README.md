@@ -1,3 +1,8 @@
+## Esse projeto tem duas traduções / This project have 2 languages
+ 
+- [![Português](https://img.shields.io/badge/pt--br-Portugu%C3%AAs-green)](README.pt-br.md) | Português 
+- [![English](https://img.shields.io/badge/en-English-green)](README.md) | English
+
 # Star wars wiki
 
 {#ingles}
@@ -15,11 +20,13 @@ A project where you can explore everything about your favorite Star Wars charact
 
 Desktop
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/679daee1-91d0-4cc2-b360-cd671c3186a1)
+
 
 Mobile
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/95cb9991-e77d-4742-bf8a-c6402d7f039c)
+
 
 
 
@@ -67,11 +74,13 @@ Um projeto onde você pode explorar tudo sobre seus personagens, naves espaciais
 
 Desktop
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/4bb8804b-e12c-46b0-a7a7-97c21181f646)
+
 
 Mobile
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/0f98d206-5f1c-4dd2-842c-876f1b311336)
+
 
 ## Demonstração
 
