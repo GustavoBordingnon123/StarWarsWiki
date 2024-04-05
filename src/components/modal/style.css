@@ -96,15 +96,16 @@
 
 @media screen and (max-height : 1080px){
     .modal__info-container{
-        max-height: 70%;
+        max-height: 60%;
     }
 }
 
 @media screen and (max-height : 800px){
     .modal__info-container{
-        max-height: 50%;
+        max-height: 40%;
     }
 }
+
 
 @media screen and (max-height : 450px){
     .modal__info-container{
@@ -112,11 +113,6 @@
     }
 }
 
-@media screen and (max-height : 680px){
-    .modal__info-container{
-        max-height: 40%;
-    }
-}
 
 
 
