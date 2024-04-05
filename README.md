@@ -33,7 +33,7 @@ Link to view the website: https://star-wars-wiki-black.vercel.app
 Dowload the project in your machine
 
 ```bash
-  npm clone https://github.com/GustavoBordingnon123/StarWarsWiki
+  git clone https://github.com/GustavoBordingnon123/StarWarsWiki
   our 
   dowload zip
 ```
@@ -56,7 +56,7 @@ Dowload the project in your machine
 
 ##  Tests
 
-Run de e2e tests
+Run the e2e tests
 
 ```bash
   cd StarWarsWiki
@@ -82,7 +82,7 @@ Baixe o projeto em sua máquina
 
 
 ```bash
-  npm clone https://github.com/GustavoBordingnon123/StarWarsWiki
+  git clone https://github.com/GustavoBordingnon123/StarWarsWiki
   ou 
   dowload zip
 ```
