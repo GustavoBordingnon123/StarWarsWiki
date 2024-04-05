@@ -52,6 +52,17 @@ function App() {
     <body>
       {isModalOpen && <Modal modalData={modalData} onClose={() => setIsModalOpen(false)} />}
 
+      <section className='stars__container'>
+        <div className='star star1'></div>
+        <div className='star star2'></div>
+        <div className='star star3'></div>
+        <div className='star star4'></div>
+        <div className='star star5'></div>
+        <div className='star star6'></div>
+        <div className='star star7'></div>
+        <div className='star star8'></div>
+      </section>
+
       <div className="container">
 
         <div className="image__container">

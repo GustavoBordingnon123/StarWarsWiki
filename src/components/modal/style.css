@@ -31,14 +31,16 @@
     border-radius: 100px;
     height: 50px;
     width: 50px;
-    background-color: var(--yellow);
-    color:var(--white);
+    border:1px solid var(--red);
+    background-color: transparent;
+    color:var(--red);
     font-weight: bolder;
+    font-size: 18px;
 }
 
 .modal__close-button:hover {
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--red);
+    color: var(--white);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -70,7 +72,7 @@
     align-items: center;
     gap: 10px;
     width: 100%;
-    max-height: 60%;
+    max-height: 50%;
     overflow: auto;
     padding: 50px 0px;
 }
@@ -81,15 +83,16 @@
 }
 
 .modal__info-container::-webkit-scrollbar-thumb {
-    background-color: #888; 
+    background-color: var(--yellow); 
     border-radius: 5px; 
 }
 
 .modal__info-container::-webkit-scrollbar-track {
-    background-color: var(--yellow); 
+    background-color: transparent; 
 }
 
 
 .modal__content p {
     color: var(--yellow);
 }
+
