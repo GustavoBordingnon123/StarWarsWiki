@@ -1,5 +1,6 @@
 // App.js
 import React, { useState, useEffect } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import './App.css';
 
 import Menu from './components/menu';
@@ -20,11 +21,18 @@ function App() {
   const [modalData, setModalData] = useState(null);
   const [activeRoute, setActiveRoute] = useState('people');
 
-  useEffect(() => {
+  useEffect(() => { 
+    
+    const loader = setTimeout(() => {
+      toast.dismiss();
+    }, 2000);
+
+    toast('Carregando dados...');
+
     fetch(`https://swapi.dev/api/${entities}/?page=${page}`) 
       .then(response => response.json())
-      .then(data => setEntityData(data.results))
-      .catch(error => console.error('Error fetching data:', error));
+      .then(data => setEntityData(data.results)) 
+      .catch(error => console.error('Error fetching data:', error))
   }, [entities, page]); 
 
   const handlePageClick = (pageNumber) => {
@@ -48,6 +56,12 @@ function App() {
 
   return (
     <body>
+
+      <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
+
       {isModalOpen && <Modal modalData={modalData} onClose={() => setIsModalOpen(false)} />}
 
       <section className='stars__container'>

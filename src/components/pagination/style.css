@@ -39,6 +39,19 @@ ul.Pagination li button:hover {
     animation: rotateWorld 6s linear infinite;
 }
 
+@media screen and (max-width: 768px) {
+    ul.Pagination {
+        display: flex;
+        padding: 80px 0px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    
+}
+
 @keyframes rotateWorld {
     from {
         transform: rotate(0deg);

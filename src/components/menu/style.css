@@ -9,6 +9,9 @@ ul.menu li{
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul.menu li.active{
@@ -25,3 +28,13 @@ ul.menu li:hover{
     background-color: var(--yellow);
 }
 
+@media screen and (max-width: 768px){
+
+    ul.menu{
+        gap: 5px;
+    }
+
+    ul.menu li{ 
+        font-size: 14px;
+    }
+}

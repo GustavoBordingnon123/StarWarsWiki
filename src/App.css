@@ -133,6 +133,16 @@ section .star.star8{
   margin: 10px 0;
 }
 
+@media screen and (max-width:750px){
+  
+  .card__container {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+}
+
 
 @keyframes star {
   0%,20%,40%,60%,80%,100%{
@@ -153,6 +163,11 @@ section .star.star8{
 }
 
 @media (max-width: 576px) {
+
+  .language__container{
+    left: 70%;  
+  }
+
   .card__container {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }

@@ -96,3 +96,21 @@
     color: var(--yellow);
 }
 
+@media screen and (max-width: 768px){
+    
+    .modal__content p {
+        font-size: 16px;
+        max-width: 200px;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .modal__close-button {
+        position: relative;
+        left: 85%;
+    }
+    
+    .modal__name-container p{
+        font-size: 32px;
+    }
+}
