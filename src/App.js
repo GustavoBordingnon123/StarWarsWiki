@@ -1,12 +1,15 @@
+// Code written by: Gustavo Bordignon
 import React, { useState, useEffect } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import './App.css';
 
+//components
 import Menu from './components/menu';
 import Card from './components/card';
 import Pagination from './components/pagination';
 import Modal from './components/modal';
 
+//assets
 import Logo from './assets/images/logo.png';
 import BrasilFlag from './assets/icons/brasil.png';
 import UnitedStatesFlag from './assets/icons/united-states.png';

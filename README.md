@@ -17,8 +17,6 @@ Mobile
 
 # Star wars wiki
 
-{#ingles}
-
 A project where you can explore everything about your favorite Star Wars characters, starships, vehicles, planets, and species, with pagination.
 
 

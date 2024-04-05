@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Card from '../components/Card';
+import Card from '../components/card';
 
 import { act } from '@testing-library/react';
 
