@@ -3,7 +3,7 @@ section.container {
     font-style: italic;
     font-weight: bold;
     display: flex;
-    margin: auto;
+    margin: 0 50px;
     aspect-ratio: 16/9;
     align-items: center;
     justify-items: center;
@@ -109,7 +109,29 @@ section .title {
     padding-inline: 1em;
 }
 
+@media screen and (max-width:1450px){
+    section.container {
+        margin: 0 42px;
+    }
+}
 
+@media screen and (max-width:1200px){
+    section.container {
+        margin: 0 25px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    section.container {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width:750){
+    section.container {
+        margin: 0px;
+    }
+}
   
 @keyframes float {
     0% {

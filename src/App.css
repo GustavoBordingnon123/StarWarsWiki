@@ -118,11 +118,13 @@ section .star.star8{
 }
 
 .card__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  column-gap: 20px;
-  row-gap: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
   padding: 0 130px;
+  row-gap: 60px;
+  width: 80vw;
+  margin: 0 auto; /* Centraliza o card__container */
 }
 
 .error__text{
@@ -136,13 +138,20 @@ section .star.star8{
 @media screen and (max-width:750px){
   
   .card__container {
-    padding: 0 30px;
+    padding: 0 10px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 0;
+    width: 100vw;
+  }
+
+  
+  .language__container{
+    left: 70%;  
   }
   
 }
-
 
 @keyframes star {
   0%,20%,40%,60%,80%,100%{
@@ -159,16 +168,5 @@ section .star.star8{
   }
   100%{
     transform: scale(2);
-  }
-}
-
-@media (max-width: 576px) {
-
-  .language__container{
-    left: 70%;  
-  }
-
-  .card__container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
