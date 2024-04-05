@@ -1,3 +1,4 @@
+// App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
@@ -10,13 +11,14 @@ import Logo from './assets/images/logo.png';
 import BrasilFlag from './assets/icons/brasil.png';
 import UnitedEstatesFlag from './assets/icons/united-states.png';
 
+
 function App() {
   const [entities, setEntities] = useState('people'); 
   const [entityData, setEntityData] = useState([]);
   const [page, setPage] = useState(1);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
-
+  const [activeRoute, setActiveRoute] = useState('people');
 
   useEffect(() => {
     fetch(`https://swapi.dev/api/${entities}/?page=${page}`) 
@@ -43,6 +45,7 @@ function App() {
   const handleMenuClick = (entity) => {
     setEntities(entity); 
     setPage(1); 
+    setActiveRoute(entity);
   };
 
   return (
@@ -75,6 +78,7 @@ function App() {
                     page === 1 ? index + 1 : index + 2 + 10 * (page - 1)
                   )
                 }
+                activeRoute={activeRoute}
               />
             ))
           ) : (

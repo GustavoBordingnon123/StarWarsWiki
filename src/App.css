@@ -57,7 +57,7 @@ body{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 20px;
-  row-gap: 50px;
+  row-gap: 80px;
   padding: 0 130px;
 }
 

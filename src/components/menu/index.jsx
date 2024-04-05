@@ -3,13 +3,14 @@ import './style.css';
 
 const Menu = ({ onClick }) => {
     const menuItems = [
-        { name: 'Personagens', route: 'people' },
-        { name: 'Naves', route: 'starships' },
-        { name: 'Veiculos', route: 'vehicles' },
-        { name: 'Planetas', route: 'planets' },
-        { name: 'Especies', route: 'species' },
+        { name: 'Personagens', route: 'people', isActive: true },
+        { name: 'Naves', route: 'starships', isActive: false },
+        { name: 'Veiculos', route: 'vehicles', isActive: false },
+        { name: 'Planetas', route: 'planets', isActive: false },
+        { name: 'Especies', route: 'species', isActive: false },
     ];
-    const [activeItem, setActiveItem] = useState(menuItems[0].name);
+
+    const [activeItem, setActiveItem] = useState(menuItems.find(item => item.isActive).name);
 
     const handleClick = (item) => {
         setActiveItem(item.name);
@@ -30,6 +31,6 @@ const Menu = ({ onClick }) => {
             </ul>
         </nav>
     );
-}
+};
 
 export default Menu;
