@@ -31,11 +31,9 @@ function App() {
     setPage(pageNumber);
   };
 
-  const handleCardClick = async (entityId) => {
+  const handleCardClick = async (entity) => {
     try {
-      const response = await fetch(`https://swapi.dev/api/${entities}/${entityId}`);
-      const data = await response.json();
-      setModalData(data);
+      setModalData(entity);
       setIsModalOpen(true);
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -84,17 +82,13 @@ function App() {
               <Card
                 key={index + 1}
                 data={entity}
-                onClick={() =>
-                  handleCardClick(
-                    page === 1 ? index + 1 : index + 2 + 10 * (page - 1)
-                  )
-                }
+                onClick={() => handleCardClick(entity)}
                 activeRoute={activeRoute}
               />
             ))
           ) : (
             <div className='error__text'>
-              <p>Não foi possível encontrar os dados.</p>
+              <p>Ops, não existem mais dados para essa página....</p>
             </div>
           )}
 
