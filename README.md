@@ -56,6 +56,17 @@ Dowload the project in your machine
   Open your browser and go to: http://localhost:3000
 ```
 
+##  Tests
+
+Run de e2e tests
+
+```bash
+  cd StarWarsWiki
+```
+
+```bash
+  npm test
+```
 
 
 
@@ -93,5 +104,19 @@ Baixe o projeto em sua máquina
 ```bash
   Abra seu navegador e vá para: http://localhost:3000
 ```
+
+
+## Testes
+
+Rode os testes unitários 
+
+```bash
+  cd StarWarsWiki
+```
+
+```bash
+  npm test
+```
+
 
 
