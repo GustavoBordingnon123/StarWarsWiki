@@ -37,7 +37,7 @@ const Card = ({ data, onClick, activeRoute }) => {
         }
         return null;
     };
-
+    
     const ninthItem = getNinthItem(data);
 
     const [itemValue, setItemValue] = useState('');
@@ -53,13 +53,12 @@ const Card = ({ data, onClick, activeRoute }) => {
                 setItemValue('Unknown');
             }
         };
-
-        if ((activeRoute === 'people' || activeRoute === 'species') && ninthItem) {
+    
+        if (activeRoute === 'people' && ninthItem && ninthItem.value) {
             fetchItemName();
-        } else {
-            setItemValue(ninthItem.value);
         }
     }, [activeRoute, ninthItem]);
+    
 
     return (
         <section className="container" onClick={onClick}>
