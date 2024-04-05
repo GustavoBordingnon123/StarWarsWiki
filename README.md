@@ -56,7 +56,7 @@ Dowload the project in your machine
 
 ##  Tests
 
-Run de e2e tests
+Run the e2e tests
 
 ```bash
   cd StarWarsWiki
