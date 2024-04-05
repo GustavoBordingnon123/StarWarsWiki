@@ -3,19 +3,6 @@
 - [![Português](https://img.shields.io/badge/pt--br-Portugu%C3%AAs-green)](README.pt-br.md) | Português 
 - [![English](https://img.shields.io/badge/en-English-green)](README.md) | English
 
-# Star wars wiki
-
-{#ingles}
-
-A project where you can explore everything about your favorite Star Wars characters, starships, vehicles, planets, and species, with pagination.
-
-
-
-
-
-
-
-
 ## Picture
 
 Desktop
@@ -27,6 +14,12 @@ Mobile
 
 ![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/95cb9991-e77d-4742-bf8a-c6402d7f039c)
 
+
+# Star wars wiki
+
+{#ingles}
+
+A project where you can explore everything about your favorite Star Wars characters, starships, vehicles, planets, and species, with pagination.
 
 
 
@@ -69,18 +62,6 @@ Dowload the project in your machine
 # Star wars wiki
 
 Um projeto onde você pode explorar tudo sobre seus personagens, naves espaciais, veículos, planetas e espécies favoritas de Star Wars, com paginação.
-
-## Imagem
-
-Desktop
-
-![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/4bb8804b-e12c-46b0-a7a7-97c21181f646)
-
-
-Mobile
-
-![image](https://github.com/GustavoBordingnon123/StarWarsWiki/assets/105391247/0f98d206-5f1c-4dd2-842c-876f1b311336)
-
 
 ## Demonstração
 
