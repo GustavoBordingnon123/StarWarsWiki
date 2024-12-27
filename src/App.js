@@ -30,7 +30,7 @@ function App() {
 
     toast(language === 'en' ? 'Loading data...' : 'Carregando dados...');
 
-    fetch(`https://swapi.dev/api/${entities}/?page=${page}`)
+    fetch(`https://swapi.py4e.com/api/${entities}/?page=${page}`)
       .then(response => response.json())
       .then(data => setEntityData(data.results))
       .catch(error => console.error('Error fetching data:', error))
@@ -82,7 +82,6 @@ function App() {
       <div className="container">
 
         <div className="image__container">
-          <a href='passagens.embarca.ai://passagem-de-onibus/curitiba-pr/ponta-grossa-pr/2024-07-20/false'>teste</a>
           <img className="title" src={Logo} alt='logo' />
           <div className="language__container">
             <img
